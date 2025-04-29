@@ -1,0 +1,22 @@
+const express = require('express')
+const app = express()
+const port = 3000
+const web = require('./routes/web')
+
+
+
+
+
+
+
+
+
+//route load
+app.use('/' ,web)
+
+
+ //server start(ye hamesha page k last mai hota hai)
+app.listen(port, ()=>{
+    console.log(`server start  localhost: ${port}`)
+})
+
