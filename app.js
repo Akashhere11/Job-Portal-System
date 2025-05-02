@@ -5,6 +5,18 @@ const web = require('./routes/web')
 
 
 
+//view engine ejs
+app.set('view engine', 'ejs')
+
+//Css or image ka link
+app.use(express.static('public'))
+
+
+
+
+
+
+
 
 
 

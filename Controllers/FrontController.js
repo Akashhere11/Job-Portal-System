@@ -2,7 +2,7 @@ class FrontController{
 
     static home =async(req,res)=>{
         try {
-            res.send('home page')
+            res.render('home')
         } catch (error) {
             console.log(error)
         }
@@ -11,7 +11,7 @@ class FrontController{
     
     static about =async(req,res)=>{
         try {
-            res.send('about page')
+            res.render('about')
         } catch (error) {
             console.log(error)
         }
