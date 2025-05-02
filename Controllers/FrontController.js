@@ -30,7 +30,7 @@ class FrontController{
     
     static contact =async(req,res)=>{
         try {
-            res.send('contact page')
+            res.render('contact')
         } catch (error) {
             console.log(error)
         }
@@ -49,6 +49,14 @@ class FrontController{
     static register =async(req,res)=>{
         try {
             res.send('register page')
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    static joblist =async(req,res)=>{
+        try {
+            res.render('joblist')
         } catch (error) {
             console.log(error)
         }
